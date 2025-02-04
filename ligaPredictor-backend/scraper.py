@@ -4,23 +4,19 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
+from datetime import datetime
 import json
 import requests
 import os
+import time
+
 
 # Configurar Selenium
 options = Options()
 options.add_argument("--headless")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-driver_details = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-# Check Liga Portuguesa Goals
-url = "https://www.flashscore.pt/futebol/portugal/liga-portugal/resultados/"
-driver.get(url)
-time.sleep(5) 
 
 # Global Variables
 MapStatistics = {
@@ -51,7 +47,7 @@ MapStatistics = {
 }
 
 GameInfoTemplate = {
-    "Game Id": 0,
+    "Match Id": 0,
     "Schedule": "",
     "Home Team": "",
     "Away Team": "",
@@ -109,89 +105,66 @@ GameInfoTemplate = {
     "Result": "",
 }
 
-numberGames = 180
+headers = {
+    "x-fsign": "SW9D1eZo"
+}
 
-def close_cookie_banner():
-    try:
-        cookie_banner = WebDriverWait(driver, 5).until(
-            EC.presence_of_element_located((By.ID, "onetrust-accept-btn-handler"))
-        )
-
-        cookie_banner.click() 
-        # print("Cookies Closed")
-
-        time.sleep(2) 
-    except Exception as e:
-        print(f"Erro ao tentar fechar o banner de cookies: {e}")
-
-def load_more_games():
-    try:
-        close_cookie_banner()
-
-        show_more_button = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.XPATH, "//a[@class='event__more event__more--static']"))
-        )
-        
-        driver.execute_script("arguments[0].click();", show_more_button)
-        # print("Show more")
-        
-        time.sleep(2)
-    except Exception as e:
-        print(f"Erro ao tentar carregar mais jogos: {e}")
 
 def getGames():
     gamesJSON = []  
+    url = "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_184_1_0_pt_1"
+    
+    response = requests.get(url, headers=headers)
 
-    load_more_games()
+    if response.status_code == 200:
+        matches = response.text.split("~AA÷")[1:]  
+        for match_section in matches:
+            parts = match_section.split("¬")
+            match_id = match_section.split("¬")[0]
+            GameInfoTemplate["Match Id"] = match_id
+            
+            for part in parts:
+                if "÷" in part:
+                    key, value = part.split("÷", 1)
+                    if key == "AD":  
+                        GameInfoTemplate["Schedule"] = datetime.fromtimestamp(int(value)).isoformat()
+                    elif key == "CX":  # Home team name
+                        GameInfoTemplate["Home Team"] = value
+                    elif key == "AF":  # Away team name
+                        GameInfoTemplate["Away Team"] = value
+                    elif key == "AG":  # Home score
+                        GameInfoTemplate["Home Goals"] = int(value)
+                    elif key == "AH":  # Away score
+                        GameInfoTemplate["Away Goals"]= int(value)
+                if GameInfoTemplate["Home Goals"] > GameInfoTemplate["Away Goals"] :
+                    GameInfoTemplate["Win"]= GameInfoTemplate["Home Team"]
+                    GameInfoTemplate["Result"] = "Home"
+                elif GameInfoTemplate["Home Goals"] < GameInfoTemplate["Away Goals"] :
+                    GameInfoTemplate["Win"]= GameInfoTemplate["Away Team"]
+                    GameInfoTemplate["Result"] = "Away"
+                else:
+                    GameInfoTemplate["Win"]= "Draw"
+                    GameInfoTemplate["Result"] = "Draw"
 
-    games = driver.find_elements(By.CLASS_NAME, "event__match")  # May have to adjust Class if Flashscore changes it
-    for game in games[:numberGames]:
-        GameInfo = getGameDetails(game)
-        gamesJSON.append(GameInfo)
+            getGameDetails(match_id)
+
+            # Add the updated GameInfoTemplate to the games list
+            gamesJSON.append(GameInfoTemplate.copy())
+                    
+    else:
+        print(f"Erro ao obter os dados. Status code: {response.status_code}")
 
     return gamesJSON
 
-def getGameDetails(specificGame):
-    GameDetails = specificGame.text.split("\n") 
-    GameInfo = GameInfoTemplate.copy()
-    
-    if len(GameDetails) >= 5:  
-        GameInfo["Schedule"] = GameDetails[0]
-        GameInfo["Home Team"] = GameDetails[1]
-        GameInfo["Away Team"] = GameDetails[2]
-        GameInfo["Home Goals"] = int(GameDetails[3])
-        GameInfo["Away Goals"] = int(GameDetails[4])
-
-        if int(GameDetails[3]) > int(GameDetails[4]): 
-            GameInfo["Win"] = GameDetails[1]
-            GameInfo["Result"] = "Home"
-        elif int(GameDetails[4]) > int(GameDetails[3]):  
-            GameInfo["Win"] = GameDetails[2]
-            GameInfo["Result"] = "Away"
-        else:  # Caso de empate
-            GameInfo["Win"] = "Draw"
-            GameInfo["Result"] = "Draw"
-    
-    game_stats_link = specificGame.find_element(By.CSS_SELECTOR, 'a').get_attribute("href")
-    game_id = game_stats_link.split('/')[4]  
-
-    GameInfo["Game Id"] = game_id
-
-    # url_game_details = f"https://www.flashscore.pt/jogo/{game_id}/#/sumario-do-jogo/sumario-do-jogo"
-    # driver_details.get(url_game_details)
-    # stats_row = driver_details.find_elements(By.CLASS_NAME, "wcl-row_OFViZ") 
-
+def getGameDetails(gameId):
     # Enviar a request
-    url_game_details = f"https://global.flashscore.ninja/20/x/feed/df_st_1_{game_id}"
-
-    headers = {
-        "x-fsign": "SW9D1eZo"
-    }
+    url_game_details = f"https://global.flashscore.ninja/20/x/feed/df_st_1_{gameId}"
 
     response = requests.get(url_game_details, headers=headers)
     
     # Verificar o status da resposta
     if response.status_code == 200:
+        
         data = response.text
 
         # Substituir delimitadores
@@ -211,14 +184,16 @@ def getGameDetails(specificGame):
                         key, value = key_value
                         obj[key] = value
                 
-                # Verificar se a coleta deve começar
                 if obj.get("SE") == "Jogo":
                     collect = True
-                elif obj.get("SE") == "1ª Parte":  # Parar a coleta antes de "1ª Parte"
+                elif obj.get("SE") == "1ª Parte":  
                     break
 
-                # Verificar se o valor de SD está no dicionário de mapeamento
                 sd_value = obj.get("SD")
+
+                if(gameId == "l01zZrTq"):
+                    print(sd_value)
+
                 if sd_value in MapStatistics:
                     stat_info = MapStatistics[sd_value]
                     stat_name = stat_info["name"]
@@ -231,18 +206,16 @@ def getGameDetails(specificGame):
                         home_value = None
                         away_value = None
                     
-                    GameInfo[f"{stat_name} - Home"] = home_value
-                    GameInfo[f"{stat_name} - Away"] = away_value
+                    GameInfoTemplate[f"{stat_name} - Home"] = home_value
+                    GameInfoTemplate[f"{stat_name} - Away"] = away_value
+                
 
                 if collect:
                     result.append(obj)
     else:
         print(f"Erro ao obter os dados. Status code: {response.status_code}")
 
-    return GameInfo 
-
 def createData(GameList):
-
     data_dir = "LigaPredictor/ligaPredictor-data/liga_portugal"
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
@@ -252,7 +225,12 @@ def createData(GameList):
         json.dump(GameList, f, ensure_ascii=False, indent=4)
     print(f"Dados salvos em {file_path}")
 
+def loadAllGames():
 
-# Save Json File
-gamesList = getGames()
-createData(gamesList)
+    games = getGames()
+
+    all_games = games
+
+    createData(all_games)
+
+loadAllGames()
