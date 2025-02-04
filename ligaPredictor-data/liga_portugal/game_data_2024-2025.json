@@ -54,8 +54,8 @@
         "Tackles - Away": "11",
         "Interceptions - Home": 13,
         "Interceptions - Away": 5,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "b5oRx1m1",
@@ -113,7 +113,7 @@
         "Interceptions - Home": 11,
         "Interceptions - Away": 8,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "2whIvNIl",
@@ -171,7 +171,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 9,
         "Win": "Benfica",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "pv3vn5QE",
@@ -229,7 +229,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 6,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "lhJySqZr",
@@ -287,7 +287,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 10,
         "Win": "Vitória SC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "6gimpqeR",
@@ -345,7 +345,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 4,
         "Win": "Estoril",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "lfEJriyK",
@@ -403,7 +403,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 15,
         "Win": "Arouca",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "IXAhO1Y7",
@@ -461,7 +461,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 10,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "M5HqQN3e",
@@ -519,7 +519,7 @@
         "Interceptions - Home": 11,
         "Interceptions - Away": 14,
         "Win": "Famalicão",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "OlbMMlc3",
@@ -577,7 +577,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 6,
         "Win": "AVS",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "OAZdZRt9",
@@ -635,7 +635,7 @@
         "Interceptions - Home": 3,
         "Interceptions - Away": 3,
         "Win": "Braga",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "hUkwJ6dS",
@@ -692,8 +692,8 @@
         "Tackles - Away": "53",
         "Interceptions - Home": 6,
         "Interceptions - Away": 8,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "zTHR07zp",
@@ -751,7 +751,7 @@
         "Interceptions - Home": 12,
         "Interceptions - Away": 14,
         "Win": "Estoril",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Wzw5X5BL",
@@ -809,7 +809,7 @@
         "Interceptions - Home": 16,
         "Interceptions - Away": 17,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "zkg2DpKk",
@@ -867,7 +867,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 13,
         "Win": "Casa Pia AC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "rFdABOl2",
@@ -924,8 +924,8 @@
         "Tackles - Away": "25",
         "Interceptions - Home": 5,
         "Interceptions - Away": 10,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "dr6zao5d",
@@ -983,7 +983,7 @@
         "Interceptions - Home": 16,
         "Interceptions - Away": 8,
         "Win": "Rio Ave",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "KGiVKSRF",
@@ -1041,7 +1041,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 11,
         "Win": "Arouca",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "U9RC6x75",
@@ -1099,7 +1099,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 4,
         "Win": "Casa Pia AC",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "QHUeAK7t",
@@ -1157,7 +1157,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 6,
         "Win": "Gil Vicente",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "xtET2f6U",
@@ -1215,7 +1215,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 7,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "G6qvNcin",
@@ -1272,8 +1272,8 @@
         "Tackles - Away": "30",
         "Interceptions - Home": 8,
         "Interceptions - Away": 14,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "pnyeJFjB",
@@ -1331,7 +1331,7 @@
         "Interceptions - Home": 4,
         "Interceptions - Away": 10,
         "Win": "Nacional",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "lKsnLyMb",
@@ -1388,8 +1388,8 @@
         "Tackles - Away": "34",
         "Interceptions - Home": 7,
         "Interceptions - Away": 7,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "A5fnjHMO",
@@ -1447,7 +1447,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 10,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "MqO48bxg",
@@ -1505,7 +1505,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 18,
         "Win": "Estoril",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "jPFL4GyI",
@@ -1563,7 +1563,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 16,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "ETXbakzJ",
@@ -1621,7 +1621,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 5,
         "Win": "Nacional",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "8tbVgaNa",
@@ -1678,8 +1678,8 @@
         "Tackles - Away": "21",
         "Interceptions - Home": 8,
         "Interceptions - Away": 10,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "nR9MeLhm",
@@ -1737,7 +1737,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 12,
         "Win": "Estoril",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "G61whwhC",
@@ -1794,8 +1794,8 @@
         "Tackles - Away": "24",
         "Interceptions - Home": 8,
         "Interceptions - Away": 9,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "6NKpNhSP",
@@ -1852,8 +1852,8 @@
         "Tackles - Away": "46",
         "Interceptions - Home": 7,
         "Interceptions - Away": 10,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "GrJj1sVP",
@@ -1911,7 +1911,7 @@
         "Interceptions - Home": 11,
         "Interceptions - Away": 7,
         "Win": "Arouca",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "fmgYDlkC",
@@ -1969,7 +1969,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 8,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "Q71HHWkm",
@@ -2026,8 +2026,8 @@
         "Tackles - Away": "21",
         "Interceptions - Home": 7,
         "Interceptions - Away": 6,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "YX4PFAKa",
@@ -2084,8 +2084,8 @@
         "Tackles - Away": "22",
         "Interceptions - Home": 9,
         "Interceptions - Away": 6,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "4YzVQ0gD",
@@ -2143,7 +2143,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 11,
         "Win": "Santa Clara",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "thRumiAF",
@@ -2201,7 +2201,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 11,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Iy14u086",
@@ -2259,7 +2259,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 8,
         "Win": "Casa Pia AC",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "Eq4mqr9s",
@@ -2316,8 +2316,8 @@
         "Tackles - Away": "23",
         "Interceptions - Home": 4,
         "Interceptions - Away": 3,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "86sMSMO0",
@@ -2375,7 +2375,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 14,
         "Win": "Rio Ave",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "zgqEUrfl",
@@ -2433,7 +2433,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 6,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "jkaCwvwJ",
@@ -2490,8 +2490,8 @@
         "Tackles - Away": "32",
         "Interceptions - Home": 11,
         "Interceptions - Away": 6,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "UBSGl4oK",
@@ -2548,8 +2548,8 @@
         "Tackles - Away": "31",
         "Interceptions - Home": 6,
         "Interceptions - Away": 6,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "M97esMwf",
@@ -2606,8 +2606,8 @@
         "Tackles - Away": "18",
         "Interceptions - Home": 9,
         "Interceptions - Away": 7,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "nV56YieM",
@@ -2665,7 +2665,7 @@
         "Interceptions - Home": 12,
         "Interceptions - Away": 7,
         "Win": "Estrela da Amadora",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "EujoR9md",
@@ -2723,7 +2723,7 @@
         "Interceptions - Home": 18,
         "Interceptions - Away": 10,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "6FnwTVIq",
@@ -2780,8 +2780,8 @@
         "Tackles - Away": "38",
         "Interceptions - Home": 14,
         "Interceptions - Away": 10,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "fyTXlDu3",
@@ -2838,8 +2838,8 @@
         "Tackles - Away": "13",
         "Interceptions - Home": 9,
         "Interceptions - Away": 13,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "MTVXJhtT",
@@ -2897,7 +2897,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 4,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "EH7bzEQ9",
@@ -2955,7 +2955,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 9,
         "Win": "FC Porto",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "Y7ajxzdc",
@@ -3012,8 +3012,8 @@
         "Tackles - Away": "47",
         "Interceptions - Home": 12,
         "Interceptions - Away": 7,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "E3SPLEBG",
@@ -3071,7 +3071,7 @@
         "Interceptions - Home": 3,
         "Interceptions - Away": 10,
         "Win": "Farense",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "6174EW3j",
@@ -3129,7 +3129,7 @@
         "Interceptions - Home": 12,
         "Interceptions - Away": 8,
         "Win": "Casa Pia AC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "pAq8Q2Nc",
@@ -3187,7 +3187,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 11,
         "Win": "Benfica",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "CE4iPS0B",
@@ -3244,8 +3244,8 @@
         "Tackles - Away": "12",
         "Interceptions - Home": 9,
         "Interceptions - Away": 9,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "Ak8zTA1n",
@@ -3303,7 +3303,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 11,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "MmEGPdCi",
@@ -3360,8 +3360,8 @@
         "Tackles - Away": "30",
         "Interceptions - Home": 11,
         "Interceptions - Away": 9,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "fwYQ87GU",
@@ -3419,7 +3419,7 @@
         "Interceptions - Home": 11,
         "Interceptions - Away": 10,
         "Win": "Casa Pia AC",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "YTh0N6VN",
@@ -3476,8 +3476,8 @@
         "Tackles - Away": "14",
         "Interceptions - Home": 16,
         "Interceptions - Away": 6,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "4CqWHpgo",
@@ -3535,7 +3535,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 11,
         "Win": "Arouca",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "bBvIAToI",
@@ -3593,7 +3593,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 7,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "6H1qRlWb",
@@ -3651,7 +3651,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 6,
         "Win": "Nacional",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "f1CONzs4",
@@ -3709,7 +3709,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 14,
         "Win": "Gil Vicente",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "pSpeIKmR",
@@ -3767,7 +3767,7 @@
         "Interceptions - Home": 16,
         "Interceptions - Away": 10,
         "Win": "Estrela da Amadora",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "GAyRCbBl",
@@ -3824,8 +3824,8 @@
         "Tackles - Away": "26",
         "Interceptions - Home": 5,
         "Interceptions - Away": 5,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "QqRACkH5",
@@ -3882,8 +3882,8 @@
         "Tackles - Away": "37",
         "Interceptions - Home": 10,
         "Interceptions - Away": 12,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "d640dwR7",
@@ -3940,8 +3940,8 @@
         "Tackles - Away": "9",
         "Interceptions - Home": 10,
         "Interceptions - Away": 12,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "4Ux2EBng",
@@ -3999,7 +3999,7 @@
         "Interceptions - Home": 11,
         "Interceptions - Away": 12,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "OCdnKtJE",
@@ -4057,7 +4057,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 5,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "rNSs9GAD",
@@ -4115,7 +4115,7 @@
         "Interceptions - Home": 12,
         "Interceptions - Away": 8,
         "Win": "Gil Vicente",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "d4ZgGXHt",
@@ -4172,8 +4172,8 @@
         "Tackles - Away": "23",
         "Interceptions - Home": 11,
         "Interceptions - Away": 8,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "A9UZAxt1",
@@ -4231,7 +4231,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 3,
         "Win": "Moreirense",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "GCxVfQk3",
@@ -4289,7 +4289,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 11,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "p69K5s4L",
@@ -4347,7 +4347,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 7,
         "Win": "Vitória SC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "xt6C73Z8",
@@ -4405,7 +4405,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 6,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "4jji0LRr",
@@ -4463,7 +4463,7 @@
         "Interceptions - Home": 3,
         "Interceptions - Away": 7,
         "Win": "Benfica",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "x4labade",
@@ -4521,7 +4521,7 @@
         "Interceptions - Home": 16,
         "Interceptions - Away": 11,
         "Win": "Estoril",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "4xBIoMCk",
@@ -4579,7 +4579,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 10,
         "Win": "Santa Clara",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "dpTPq0s2",
@@ -4636,8 +4636,8 @@
         "Tackles - Away": "22",
         "Interceptions - Home": 7,
         "Interceptions - Away": 13,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "phUoirkS",
@@ -4695,7 +4695,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 12,
         "Win": "Rio Ave",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "CvWwg4KF",
@@ -4753,7 +4753,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 13,
         "Win": "Farense",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "l01zZrTq",
@@ -4811,7 +4811,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 5,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "IHA4v55M",
@@ -4869,7 +4869,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 2,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "0IHCtzVh",
@@ -4927,7 +4927,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 6,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "lxJmrm6c",
@@ -4985,7 +4985,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 11,
         "Win": "Estrela da Amadora",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "AFkqXMcd",
@@ -5043,7 +5043,7 @@
         "Interceptions - Home": 13,
         "Interceptions - Away": 15,
         "Win": "Rio Ave",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "8rLKvEa5",
@@ -5100,8 +5100,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 6,
         "Interceptions - Away": 8,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "MkHetRzA",
@@ -5158,8 +5158,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 3,
         "Interceptions - Away": 15,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "zcy1KqEj",
@@ -5216,8 +5216,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 8,
         "Interceptions - Away": 6,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "Uc9TxhUH",
@@ -5275,7 +5275,7 @@
         "Interceptions - Home": 3,
         "Interceptions - Away": 5,
         "Win": "Moreirense",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "pWz7ZINP",
@@ -5333,7 +5333,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 9,
         "Win": "Nacional",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "dAfCDy16",
@@ -5391,7 +5391,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 10,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "vgC2OhFO",
@@ -5449,7 +5449,7 @@
         "Interceptions - Home": 7,
         "Interceptions - Away": 7,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "rRIgQEpC",
@@ -5507,7 +5507,7 @@
         "Interceptions - Home": 6,
         "Interceptions - Away": 4,
         "Win": "Vitória SC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "f5nCrd0t",
@@ -5565,7 +5565,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 8,
         "Win": "Famalicão",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "EoRxUdom",
@@ -5623,7 +5623,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 6,
         "Win": "Boavista",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "z1FoSzGa",
@@ -5681,7 +5681,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 10,
         "Win": "Benfica",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "0r13FcWg",
@@ -5738,8 +5738,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 10,
         "Interceptions - Away": 10,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "UNhKBFVI",
@@ -5797,7 +5797,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 8,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "WQFk4C6e",
@@ -5855,7 +5855,7 @@
         "Interceptions - Home": 5,
         "Interceptions - Away": 5,
         "Win": "FC Porto",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "6LuU0bH0",
@@ -5912,8 +5912,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 12,
         "Interceptions - Away": 8,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "UgROMuvK",
@@ -5971,7 +5971,7 @@
         "Interceptions - Home": 12,
         "Interceptions - Away": 14,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Y7sM2Knl",
@@ -6029,7 +6029,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 12,
         "Win": "Braga",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Uunj8tPQ",
@@ -6087,7 +6087,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 5,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "2mZxaxnD",
@@ -6145,7 +6145,7 @@
         "Interceptions - Home": 10,
         "Interceptions - Away": 9,
         "Win": "Moreirense",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "MFrrA2fE",
@@ -6203,7 +6203,7 @@
         "Interceptions - Home": 4,
         "Interceptions - Away": 12,
         "Win": "Estoril",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "viJc2jy8",
@@ -6261,7 +6261,7 @@
         "Interceptions - Home": 8,
         "Interceptions - Away": 6,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "ER2eHJ1s",
@@ -6319,7 +6319,7 @@
         "Interceptions - Home": 9,
         "Interceptions - Away": 7,
         "Win": "Casa Pia AC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "COal6Yyq",
@@ -6377,7 +6377,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "rowvjMoo",
@@ -6435,7 +6435,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Farense",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "I3iM2aVj",
@@ -6492,8 +6492,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "YVFk8L7T",
@@ -6551,7 +6551,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "txwHOthA",
@@ -6608,8 +6608,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "bgLQDPwh",
@@ -6667,7 +6667,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Gil Vicente",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "SYCsAswH",
@@ -6725,7 +6725,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Moreirense",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "W6JYB384",
@@ -6782,8 +6782,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "r3W9nmug",
@@ -6840,8 +6840,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "ILphaQOb",
@@ -6899,7 +6899,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Braga",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "CrOQr5vI",
@@ -6957,7 +6957,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "4IKIpR95",
@@ -7015,7 +7015,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "zwT1l9At",
@@ -7072,8 +7072,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "Qol0c4gB",
@@ -7131,7 +7131,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "n1x9erON",
@@ -7188,8 +7188,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "6sHZtq9U",
@@ -7247,7 +7247,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Estrela da Amadora",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Mgiq1nfn",
@@ -7305,7 +7305,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "YyyaU5PO",
@@ -7363,7 +7363,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Benfica",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "QgMGUEJ7",
@@ -7421,7 +7421,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "xrT1hIBE",
@@ -7479,7 +7479,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Arouca",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "xUmTwJdL",
@@ -7536,8 +7536,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "URS7Wzke",
@@ -7594,8 +7594,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "0OxiWRfC",
@@ -7653,7 +7653,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "dEUaYdKr",
@@ -7710,8 +7710,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "4dqrYmQa",
@@ -7769,7 +7769,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "dWuzzAem",
@@ -7827,7 +7827,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "SYfr7KLq",
@@ -7884,8 +7884,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "AgUoRuDF",
@@ -7943,7 +7943,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Vitória SC",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "r7SgPJsS",
@@ -8001,7 +8001,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Estoril",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "llqi5bjd",
@@ -8059,7 +8059,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "AHCYHyz2",
@@ -8117,7 +8117,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "GfywT1r3",
@@ -8174,8 +8174,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "dj4CCtbM",
@@ -8233,7 +8233,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "AVS",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "jDkLuuS8",
@@ -8291,7 +8291,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Casa Pia AC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "2i9QJc5k",
@@ -8349,7 +8349,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "AJDx03EG",
@@ -8406,8 +8406,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "G0UZurNp",
@@ -8465,7 +8465,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Vitória SC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "4MAU1Pq4",
@@ -8523,7 +8523,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Rio Ave",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "MaC1bjwC",
@@ -8581,7 +8581,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Nacional",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "jwZBE2T9",
@@ -8639,7 +8639,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "IPz4GObc",
@@ -8696,8 +8696,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "zqEg0C8a",
@@ -8755,7 +8755,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Casa Pia AC",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "8fHL3oFi",
@@ -8813,7 +8813,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Santa Clara",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "2HhHhL6j",
@@ -8870,8 +8870,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "vw0zcen1",
@@ -8929,7 +8929,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "AVS",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "W6gI7C0J",
@@ -8987,7 +8987,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Braga",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "bgeA9YV6",
@@ -9044,8 +9044,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "ETPp2Ywm",
@@ -9103,7 +9103,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Arouca",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "roZE7fGP",
@@ -9161,7 +9161,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "buGyeZGD",
@@ -9219,7 +9219,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Famalicão",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Iqm2Bf1f",
@@ -9277,7 +9277,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "AJqfDGWs",
@@ -9335,7 +9335,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Santa Clara",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "Qo8NIx9K",
@@ -9393,7 +9393,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "nuLe4wfR",
@@ -9451,7 +9451,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Famalicão",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "hMygpI2e",
@@ -9509,7 +9509,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Braga",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "Cl1KVIm2",
@@ -9567,7 +9567,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Vitória SC",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "dfrpnvYr",
@@ -9625,7 +9625,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Moreirense",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "bJv1rdX7",
@@ -9683,7 +9683,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Benfica",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "6P1SbHHl",
@@ -9741,7 +9741,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "4d35gMu9",
@@ -9799,7 +9799,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Rio Ave",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "0OdEi0AL",
@@ -9857,7 +9857,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Gil Vicente",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "vFHm6aPE",
@@ -9915,7 +9915,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "bq6mCXjC",
@@ -9973,7 +9973,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Vitória SC",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "2ViDShyg",
@@ -10030,8 +10030,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "2HCvEgMa",
@@ -10089,7 +10089,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Famalicão",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "Wd4eABLO",
@@ -10147,7 +10147,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Moreirense",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "WSx0LyUP",
@@ -10205,7 +10205,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Santa Clara",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "4MpEcYyJ",
@@ -10263,7 +10263,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "FC Porto",
-        "Result": "Casa"
+        "Result": "Home"
     },
     {
         "Game Id": "G0EWFFim",
@@ -10321,7 +10321,7 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Boavista",
-        "Result": "Visitante"
+        "Result": "Away"
     },
     {
         "Game Id": "ANZ5UE6t",
@@ -10378,8 +10378,8 @@
         "Tackles - Away": 0,
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
-        "Win": "Empate",
-        "Result": "Empate"
+        "Win": "Draw",
+        "Result": "Draw"
     },
     {
         "Game Id": "8fi5af76",
@@ -10437,6 +10437,6 @@
         "Interceptions - Home": 0,
         "Interceptions - Away": 0,
         "Win": "Sporting CP",
-        "Result": "Casa"
+        "Result": "Home"
     }
 ]

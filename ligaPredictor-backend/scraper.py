@@ -164,13 +164,13 @@ def getGameDetails(specificGame):
 
         if int(GameDetails[3]) > int(GameDetails[4]): 
             GameInfo["Win"] = GameDetails[1]
-            GameInfo["Result"] = "Casa"
+            GameInfo["Result"] = "Home"
         elif int(GameDetails[4]) > int(GameDetails[3]):  
             GameInfo["Win"] = GameDetails[2]
-            GameInfo["Result"] = "Visitante"
+            GameInfo["Result"] = "Away"
         else:  # Caso de empate
-            GameInfo["Win"] = "Empate"
-            GameInfo["Result"] = "Empate"
+            GameInfo["Win"] = "Draw"
+            GameInfo["Result"] = "Draw"
     
     game_stats_link = specificGame.find_element(By.CSS_SELECTOR, 'a').get_attribute("href")
     game_id = game_stats_link.split('/')[4]  
