@@ -15,7 +15,6 @@ options = Options()
 options.add_argument("--headless")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-
 # Global Variables
 MapStatistics = {
     "432": {"name": "xG", "type": float},
@@ -48,7 +47,6 @@ headers = {
     "x-fsign": "SW9D1eZo"
 }
 
-
 # Function to convert the match date and time to the desired format
 def convert_match_time(match_time_str):
     # Assuming the match time is in the format "03.02. 20:45"
@@ -64,7 +62,9 @@ def convert_match_time(match_time_str):
 
 def loadInitialGames():
     gamesJSON = []  
-    url = "https://www.flashscore.pt/futebol/portugal/liga-portugal/resultados/"
+    # url = "https://www.flashscore.pt/futebol/portugal/liga-portugal/resultados/"
+    # url = "https://www.flashscore.pt/futebol/portugal/liga-portugal-betclic-2023-2024/resultados/"
+    url = "https://www.flashscore.pt/futebol/portugal/liga-portugal-betclic-2022-2023/resultados/"
     driver.get(url)
 
     Matches = driver.find_elements(By.CLASS_NAME, "event__match")
@@ -158,7 +158,9 @@ def loadInitialGames():
 
 def getGames():
     gamesJSON = []  
-    url = "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_184_1_0_pt_1"
+    # url = "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_184_1_0_pt_1"
+    # url = "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_183_1_0_pt_1" 
+    url = "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_182_1_0_pt_1" 
     
     response = requests.get(url, headers=headers)
 
@@ -320,7 +322,9 @@ def createData(GameList):
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
 
-    file_path = os.path.join(data_dir, "game_data_2024-2025.json")
+    # file_path = os.path.join(data_dir, "game_data_2024-2025.json")
+    # file_path = os.path.join(data_dir, "game_data_2023-2024.json")
+    file_path = os.path.join(data_dir, "game_data_2022-2023.json")
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(GameList, f, ensure_ascii=False, indent=4)
     print(f"Dados salvos em {file_path}")
