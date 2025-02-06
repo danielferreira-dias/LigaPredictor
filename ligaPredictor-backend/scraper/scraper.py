@@ -25,11 +25,11 @@ MapStatistics = {
     "23": {"name": "Yellow Cards", "type": int},
     "22": {"name": "Red Cards", "type": int},
     "18": {"name": "Throws", "type": int},
-    "342": {"name": "Passes", "type": str},
-    "467": {"name": "Passes in the last third", "type": str},
-    "433": {"name": "Crosses", "type": str},
-    "475": {"name": "Effective Tackles", "type": str},
-    "479": {"name": "Tackles", "type": str},
+    "342": {"name": "Passes", "type": float},
+    "467": {"name": "Passes in the last third", "type": float},
+    "433": {"name": "Crosses", "type": float},
+    "475": {"name": "Effective Tackles", "type": float},
+    "479": {"name": "Tackles", "type": int},
     "434": {"name": "Interceptions", "type": int}
 }
 
@@ -76,8 +76,7 @@ def fetchGameURL():
     
     all_merged_results_final = [item for sublist in all_merged_results for item in sublist]
     print(len(all_merged_results_final))
-    # createData(all_merged_results_final, "all_games")
-
+    createData(all_merged_results_final, "all_games")
 
 def getGames(url):
     gamesJSON = []  
@@ -144,14 +143,29 @@ def getGames(url):
                             stat_info = MapStatistics[sd_value]
                             stat_name = stat_info["name"]
                             stat_type = stat_info["type"]
-                            
+
+
                             try:
-                                home_value = stat_type(obj.get("SH", 0))
-                                away_value = stat_type(obj.get("SI", 0))
-                            except ValueError:
+                                sh_value = obj.get("SH", 0)
+                                si_value = obj.get("SI", 0)
+
+                                if "%" in str(sh_value):
+                                    home_value_text = str(sh_value).split("%")
+                                    home_value = float(home_value_text[0]) 
+                                else:
+                                    home_value = stat_type(sh_value)
+
+                                if "%" in str(si_value):
+                                    away_value_text = str(si_value).split("%")
+                                    away_value = float(away_value_text[0]) 
+                                else:
+                                    away_value = stat_type(si_value)
+
+                            except (ValueError, TypeError) as e:
+                                print(f"Error processing values for {stat_name}: {e}")
                                 home_value = None
                                 away_value = None
-                            
+
                             # Update the corresponding attributes in the Game object
                             attr_home = f"{stat_name.lower().replace(' ', '_')}_home"
                             attr_away = f"{stat_name.lower().replace(' ', '_')}_away"
@@ -169,7 +183,6 @@ def getGames(url):
             gamesJSON.append(Game.to_dict())
     else:
         print(f"Erro ao obter os dados. Status code: {response.status_code}")
-
     return gamesJSON
 
 def createData(GameList, season):
