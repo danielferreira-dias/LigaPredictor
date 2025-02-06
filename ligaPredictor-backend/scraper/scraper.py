@@ -63,12 +63,20 @@ def fetchGameURL():
         "urls_2022_2023": urls_2022_2023,
     }
 
+    all_merged_results = []
+
     for season in season_url_map:
         with ThreadPoolExecutor(max_workers=4) as executor:
             results = list(executor.map(getGames, season_url_map[season]))
 
         merged_results = [item for sublist in results for item in sublist]
-        createData(merged_results, season)
+        # createData(merged_results, season)
+        print(f"{len(merged_results)} from {season}")
+        all_merged_results.append((merged_results))
+    
+    all_merged_results_final = [item for sublist in all_merged_results for item in sublist]
+    print(len(all_merged_results_final))
+    # createData(all_merged_results_final, "all_games")
 
 
 def getGames(url):
@@ -173,7 +181,7 @@ def createData(GameList, season):
     file_path = os.path.join(data_dir, f"game_data_{season}.json")
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(GameList, f, ensure_ascii=False, indent=4)
-    print(f"Dados armazenados - {file_path}")
+    print(f"Dados armazenados - game_data_{season}.json")
 
 
 fetchGameURL()
