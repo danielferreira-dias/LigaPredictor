@@ -56,17 +56,19 @@ def fetchGameURL():
         "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_176_2_0_pt_1",
         "https://global.flashscore.ninja/20/x/feed/tr_1_155_UmMRoGzp_176_3_0_pt_1",
     ]
-    season_urls = {
-        "2024-2025": urls_2024_2025,
-        "2023-2024": urls_2023_2024,
-        "2022-2023": urls_2022_2023
+
+    season_url_map = {
+        "urls_2024_2025": urls_2024_2025,
+        "urls_2023_2024": urls_2023_2024,
+        "urls_2022_2023": urls_2022_2023,
     }
 
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        results = list(executor.map(getGames, urls_2022_2023))
+    for season in season_url_map:
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            results = list(executor.map(getGames, season_url_map[season]))
 
-    merged_results = [item for sublist in results for item in sublist]
-    createData(merged_results)
+        merged_results = [item for sublist in results for item in sublist]
+        createData(merged_results, season)
 
 
 def getGames(url):
@@ -162,16 +164,16 @@ def getGames(url):
 
     return gamesJSON
 
-def createData(GameList):
+def createData(GameList, season):
     data_dir = "LigaPredictor/ligaPredictor-data/liga_portugal"
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
 
     # file_path = os.path.join(data_dir, f"game_data_{season}.json")
-    file_path = os.path.join(data_dir, f"game_data_2022-2023.json")
+    file_path = os.path.join(data_dir, f"game_data_{season}.json")
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(GameList, f, ensure_ascii=False, indent=4)
-    print(f"Dados salvos em {file_path}")
+    print(f"Dados armazenados - {file_path}")
 
 
 fetchGameURL()
