@@ -6,6 +6,30 @@
 	},
 	"item": [
 		{
+			"name": "2024-2025 Game Details Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/event/12514226/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"event",
+						"12514226",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "2024-2025 Round Request",
 			"request": {
 				"method": "GET",
@@ -39,7 +63,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://www.sofascore.com/api/v1/event/12514236/pregame-form",
+					"raw": "https://www.sofascore.com/api/v1/event/12514229/pregame-form",
 					"protocol": "https",
 					"host": [
 						"www",
@@ -50,7 +74,7 @@
 						"api",
 						"v1",
 						"event",
-						"12514236",
+						"12514229",
 						"pregame-form"
 					]
 				}

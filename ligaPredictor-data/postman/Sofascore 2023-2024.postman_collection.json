@@ -34,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "2023-2024 Game Details Request",
+			"name": "2023-2024 Game Details Statistic Request",
 			"request": {
 				"method": "GET",
 				"header": [],
