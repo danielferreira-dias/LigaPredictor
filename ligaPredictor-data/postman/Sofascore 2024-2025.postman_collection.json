@@ -259,6 +259,58 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "2024-2025 New Promoted Clubs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/unique-tournament/238/season/63670/info",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"unique-tournament",
+						"238",
+						"season",
+						"63670",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Total + Current Round",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/unique-tournament/238/season/63670/rounds",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"unique-tournament",
+						"238",
+						"season",
+						"63670",
+						"rounds"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
