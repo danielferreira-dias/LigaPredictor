@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "d43dff1a-9d74-4eca-851e-10bd4b3095f0",
+		"name": "Sofascore 2024/2025",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "2024-2025 Round Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/unique-tournament/238/season/63670/events/round/20",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"unique-tournament",
+						"238",
+						"season",
+						"63670",
+						"events",
+						"round",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Pregame-form",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/event/12514236/pregame-form",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"event",
+						"12514236",
+						"pregame-form"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Game Statistics Compare 2 Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/team/3002/unique-tournament/238/season/63670/statistics/overall",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"team",
+						"3002",
+						"unique-tournament",
+						"238",
+						"season",
+						"63670",
+						"statistics",
+						"overall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Standings - Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/tournament/52/season/63670/standings/home",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tournament",
+						"52",
+						"season",
+						"63670",
+						"standings",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Standings - Away",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/tournament/52/season/63670/standings/away",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tournament",
+						"52",
+						"season",
+						"63670",
+						"standings",
+						"away"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Standings - Total",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/tournament/52/season/63670/standings/total",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tournament",
+						"52",
+						"season",
+						"63670",
+						"standings",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Player Scores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/unique-tournament/238/season/63670/statistics?limit=20&order=-rating&accumulation=total&group=summary",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"unique-tournament",
+						"238",
+						"season",
+						"63670",
+						"statistics"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "order",
+							"value": "-rating"
+						},
+						{
+							"key": "accumulation",
+							"value": "total"
+						},
+						{
+							"key": "group",
+							"value": "summary"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Match Head to Head",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/event/12514229/h2h",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"event",
+						"12514229",
+						"h2h"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2024-2025 Match Head-2-Head All Games",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/event/bkbsckb/h2h/events",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"event",
+						"bkbsckb",
+						"h2h",
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "cfa881df-8b5d-4c1c-b091-dfba135cc6d5",
+		"name": "Sofascore 2023/2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "2023-2024 Round Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/unique-tournament/238/season/52769/events/round/34",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"unique-tournament",
+						"238",
+						"season",
+						"52769",
+						"events",
+						"round",
+						"34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2023-2024 Game Details Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.sofascore.com/api/v1/event/12514226/statistics",
+					"protocol": "https",
+					"host": [
+						"www",
+						"sofascore",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"event",
+						"12514226",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

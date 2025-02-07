@@ -70,7 +70,7 @@ def fetchGameURL():
             results = list(executor.map(getGames, season_url_map[season]))
 
         merged_results = [item for sublist in results for item in sublist]
-        # createData(merged_results, season)
+        createData(merged_results, season)
         print(f"{len(merged_results)} from {season}")
         all_merged_results.append((merged_results))
     
