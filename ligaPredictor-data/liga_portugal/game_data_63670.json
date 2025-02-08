@@ -1,0 +1,1812 @@
+[
+    {
+        "match_id": 12512901,
+        "home_team": "Sporting",
+        "away_team": "Rio Ave",
+        "home_team_id": 3001,
+        "away_team_id": 3036,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12512902,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "CD Nacional",
+        "home_team_id": 483088,
+        "away_team_id": 3013,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12512897,
+        "home_team": "Casa Pia",
+        "away_team": "Boavista",
+        "home_team_id": 36365,
+        "away_team_id": 2995,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12512903,
+        "home_team": "FC Porto",
+        "away_team": "Gil Vicente",
+        "home_team_id": 3002,
+        "away_team_id": 3010,
+        "home_goals": 3,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12512887,
+        "home_team": "Estoril Praia",
+        "away_team": "Santa Clara",
+        "home_team_id": 4500,
+        "away_team_id": 3011,
+        "home_goals": 1,
+        "away_goals": 4,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12512900,
+        "home_team": "Famalicão",
+        "away_team": "Benfica",
+        "home_team_id": 49531,
+        "away_team_id": 3006,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12512896,
+        "home_team": "SC Farense",
+        "away_team": "Moreirense",
+        "home_team_id": 2998,
+        "away_team_id": 3014,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12512899,
+        "home_team": "Sporting Braga",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 2999,
+        "away_team_id": 3035,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12512898,
+        "home_team": "FC Arouca",
+        "away_team": "Vitória SC",
+        "home_team_id": 25777,
+        "away_team_id": 3009,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12513983,
+        "home_team": "Santa Clara",
+        "away_team": "FC Porto",
+        "home_team_id": 3011,
+        "away_team_id": 3002,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12513991,
+        "home_team": "Gil Vicente",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 3010,
+        "away_team_id": 483088,
+        "home_goals": 4,
+        "away_goals": 2,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513990,
+        "home_team": "Rio Ave",
+        "away_team": "SC Farense",
+        "home_team_id": 3036,
+        "away_team_id": 2998,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513987,
+        "home_team": "CD Nacional",
+        "away_team": "Sporting",
+        "home_team_id": 3013,
+        "away_team_id": 3001,
+        "home_goals": 1,
+        "away_goals": 6,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12513984,
+        "home_team": "Benfica",
+        "away_team": "Casa Pia",
+        "home_team_id": 3006,
+        "away_team_id": 36365,
+        "home_goals": 3,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513988,
+        "home_team": "Moreirense",
+        "away_team": "FC Arouca",
+        "home_team_id": 3014,
+        "away_team_id": 25777,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513989,
+        "home_team": "Vitória SC",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3009,
+        "away_team_id": 4500,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513985,
+        "home_team": "Boavista",
+        "away_team": "Sporting Braga",
+        "home_team_id": 2995,
+        "away_team_id": 2999,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12513986,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Famalicão",
+        "home_team_id": 3035,
+        "away_team_id": 49531,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12513997,
+        "home_team": "SC Farense",
+        "away_team": "Sporting",
+        "home_team_id": 2998,
+        "away_team_id": 3001,
+        "home_goals": 0,
+        "away_goals": 5,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514002,
+        "home_team": "Casa Pia",
+        "away_team": "Santa Clara",
+        "home_team_id": 36365,
+        "away_team_id": 3011,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12513993,
+        "home_team": "FC Porto",
+        "away_team": "Rio Ave",
+        "home_team_id": 3002,
+        "away_team_id": 3036,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513992,
+        "home_team": "Benfica",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 3006,
+        "away_team_id": 3035,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514001,
+        "home_team": "Famalicão",
+        "away_team": "Boavista",
+        "home_team_id": 49531,
+        "away_team_id": 2995,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513995,
+        "home_team": "FC Arouca",
+        "away_team": "CD Nacional",
+        "home_team_id": 25777,
+        "away_team_id": 3013,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513996,
+        "home_team": "Estoril Praia",
+        "away_team": "Gil Vicente",
+        "home_team_id": 4500,
+        "away_team_id": 3010,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12513998,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "Vitória SC",
+        "home_team_id": 483088,
+        "away_team_id": 3009,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12513994,
+        "home_team": "Sporting Braga",
+        "away_team": "Moreirense",
+        "home_team_id": 2999,
+        "away_team_id": 3014,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514005,
+        "home_team": "Moreirense",
+        "away_team": "Benfica",
+        "home_team_id": 3014,
+        "away_team_id": 3006,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514003,
+        "home_team": "Santa Clara",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 3011,
+        "away_team_id": 483088,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514004,
+        "home_team": "Boavista",
+        "away_team": "Estoril Praia",
+        "home_team_id": 2995,
+        "away_team_id": 4500,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514009,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Casa Pia",
+        "home_team_id": 3035,
+        "away_team_id": 36365,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514006,
+        "home_team": "Sporting",
+        "away_team": "FC Porto",
+        "home_team_id": 3001,
+        "away_team_id": 3002,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514010,
+        "home_team": "CD Nacional",
+        "away_team": "SC Farense",
+        "home_team_id": 3013,
+        "away_team_id": 2998,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514008,
+        "home_team": "Rio Ave",
+        "away_team": "FC Arouca",
+        "home_team_id": 3036,
+        "away_team_id": 25777,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514007,
+        "home_team": "Gil Vicente",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3010,
+        "away_team_id": 2999,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514011,
+        "home_team": "Vitória SC",
+        "away_team": "Famalicão",
+        "home_team_id": 3009,
+        "away_team_id": 49531,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514014,
+        "home_team": "FC Arouca",
+        "away_team": "Sporting",
+        "home_team_id": 25777,
+        "away_team_id": 3001,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514015,
+        "home_team": "Casa Pia",
+        "away_team": "Moreirense",
+        "home_team_id": 36365,
+        "away_team_id": 3014,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514018,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "Rio Ave",
+        "home_team_id": 483088,
+        "away_team_id": 3036,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514012,
+        "home_team": "Benfica",
+        "away_team": "Santa Clara",
+        "home_team_id": 3006,
+        "away_team_id": 3011,
+        "home_goals": 4,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514017,
+        "home_team": "Famalicão",
+        "away_team": "Gil Vicente",
+        "home_team_id": 49531,
+        "away_team_id": 3010,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514020,
+        "home_team": "FC Porto",
+        "away_team": "SC Farense",
+        "home_team_id": 3002,
+        "away_team_id": 2998,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514016,
+        "home_team": "Estoril Praia",
+        "away_team": "CD Nacional",
+        "home_team_id": 4500,
+        "away_team_id": 3013,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514013,
+        "home_team": "Sporting Braga",
+        "away_team": "Vitória SC",
+        "home_team_id": 2999,
+        "away_team_id": 3009,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514019,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Boavista",
+        "home_team_id": 3035,
+        "away_team_id": 2995,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514024,
+        "home_team": "CD Nacional",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3013,
+        "away_team_id": 2999,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514027,
+        "home_team": "Rio Ave",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3036,
+        "away_team_id": 4500,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514021,
+        "home_team": "Santa Clara",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 3011,
+        "away_team_id": 3035,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514022,
+        "home_team": "Vitória SC",
+        "away_team": "FC Porto",
+        "home_team_id": 3009,
+        "away_team_id": 3002,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514028,
+        "home_team": "Moreirense",
+        "away_team": "Famalicão",
+        "home_team_id": 3014,
+        "away_team_id": 49531,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514026,
+        "home_team": "Gil Vicente",
+        "away_team": "Casa Pia",
+        "home_team_id": 3010,
+        "away_team_id": 36365,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514025,
+        "home_team": "SC Farense",
+        "away_team": "FC Arouca",
+        "home_team_id": 2998,
+        "away_team_id": 25777,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514029,
+        "home_team": "Sporting",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 3001,
+        "away_team_id": 483088,
+        "home_goals": 3,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514023,
+        "home_team": "Boavista",
+        "away_team": "Benfica",
+        "home_team_id": 2995,
+        "away_team_id": 3006,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514034,
+        "home_team": "Estoril Praia",
+        "away_team": "Sporting",
+        "home_team_id": 4500,
+        "away_team_id": 3001,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514035,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Moreirense",
+        "home_team_id": 3035,
+        "away_team_id": 3014,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514033,
+        "home_team": "Casa Pia",
+        "away_team": "Vitória SC",
+        "home_team_id": 36365,
+        "away_team_id": 3009,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514031,
+        "home_team": "Benfica",
+        "away_team": "Gil Vicente",
+        "home_team_id": 3006,
+        "away_team_id": 3010,
+        "home_goals": 5,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514036,
+        "home_team": "Famalicão",
+        "away_team": "CD Nacional",
+        "home_team_id": 49531,
+        "away_team_id": 3013,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514038,
+        "home_team": "FC Porto",
+        "away_team": "FC Arouca",
+        "home_team_id": 3002,
+        "away_team_id": 25777,
+        "home_goals": 4,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514030,
+        "home_team": "Santa Clara",
+        "away_team": "Boavista",
+        "home_team_id": 3011,
+        "away_team_id": 2995,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514032,
+        "home_team": "Sporting Braga",
+        "away_team": "Rio Ave",
+        "home_team_id": 2999,
+        "away_team_id": 3036,
+        "home_goals": 4,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514037,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "SC Farense",
+        "home_team_id": 483088,
+        "away_team_id": 2998,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514048,
+        "home_team": "Rio Ave",
+        "away_team": "Famalicão",
+        "home_team_id": 3036,
+        "away_team_id": 49531,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514046,
+        "home_team": "Gil Vicente",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 3010,
+        "away_team_id": 3035,
+        "home_goals": 3,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514049,
+        "home_team": "Moreirense",
+        "away_team": "Santa Clara",
+        "home_team_id": 3014,
+        "away_team_id": 3011,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514039,
+        "home_team": "FC Arouca",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 25777,
+        "away_team_id": 483088,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514044,
+        "home_team": "Sporting",
+        "away_team": "Casa Pia",
+        "home_team_id": 3001,
+        "away_team_id": 36365,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514045,
+        "home_team": "SC Farense",
+        "away_team": "Estoril Praia",
+        "home_team_id": 2998,
+        "away_team_id": 4500,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514043,
+        "home_team": "Vitória SC",
+        "away_team": "Boavista",
+        "home_team_id": 3009,
+        "away_team_id": 2995,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514041,
+        "home_team": "FC Porto",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3002,
+        "away_team_id": 2999,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12955661,
+        "home_team": "CD Nacional",
+        "away_team": "Benfica",
+        "home_team_id": 3013,
+        "away_team_id": 3006,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514054,
+        "home_team": "Casa Pia",
+        "away_team": "CD Nacional",
+        "home_team_id": 36365,
+        "away_team_id": 3013,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514050,
+        "home_team": "Santa Clara",
+        "away_team": "Gil Vicente",
+        "home_team_id": 3011,
+        "away_team_id": 3010,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514058,
+        "home_team": "Estoril Praia",
+        "away_team": "FC Arouca",
+        "home_team_id": 4500,
+        "away_team_id": 25777,
+        "home_goals": 4,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514053,
+        "home_team": "Boavista",
+        "away_team": "Moreirense",
+        "home_team_id": 2995,
+        "away_team_id": 3014,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514056,
+        "home_team": "Famalicão",
+        "away_team": "Sporting",
+        "home_team_id": 49531,
+        "away_team_id": 3001,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514052,
+        "home_team": "Sporting Braga",
+        "away_team": "SC Farense",
+        "home_team_id": 2999,
+        "away_team_id": 2998,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514051,
+        "home_team": "Benfica",
+        "away_team": "Rio Ave",
+        "home_team_id": 3006,
+        "away_team_id": 3036,
+        "home_goals": 5,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514055,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Vitória SC",
+        "home_team_id": 3035,
+        "away_team_id": 3009,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514057,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "FC Porto",
+        "home_team_id": 483088,
+        "away_team_id": 3002,
+        "home_goals": 0,
+        "away_goals": 5,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514067,
+        "home_team": "Sporting",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 3001,
+        "away_team_id": 3035,
+        "home_goals": 5,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514065,
+        "home_team": "Rio Ave",
+        "away_team": "Casa Pia",
+        "home_team_id": 3036,
+        "away_team_id": 36365,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514063,
+        "home_team": "SC Farense",
+        "away_team": "Benfica",
+        "home_team_id": 2998,
+        "away_team_id": 3006,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514064,
+        "home_team": "Gil Vicente",
+        "away_team": "Boavista",
+        "home_team_id": 3010,
+        "away_team_id": 2995,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514061,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "Famalicão",
+        "home_team_id": 483088,
+        "away_team_id": 49531,
+        "home_goals": 2,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514059,
+        "home_team": "FC Arouca",
+        "away_team": "Sporting Braga",
+        "home_team_id": 25777,
+        "away_team_id": 2999,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514060,
+        "home_team": "Vitória SC",
+        "away_team": "Moreirense",
+        "home_team_id": 3009,
+        "away_team_id": 3014,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514066,
+        "home_team": "FC Porto",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3002,
+        "away_team_id": 4500,
+        "home_goals": 4,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514068,
+        "home_team": "CD Nacional",
+        "away_team": "Santa Clara",
+        "home_team_id": 3013,
+        "away_team_id": 3011,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514077,
+        "home_team": "Moreirense",
+        "away_team": "Gil Vicente",
+        "home_team_id": 3014,
+        "away_team_id": 3010,
+        "home_goals": 3,
+        "away_goals": 2,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514073,
+        "home_team": "Casa Pia",
+        "away_team": "SC Farense",
+        "home_team_id": 36365,
+        "away_team_id": 2998,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514079,
+        "home_team": "Estoril Praia",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 4500,
+        "away_team_id": 483088,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514076,
+        "home_team": "Famalicão",
+        "away_team": "FC Arouca",
+        "home_team_id": 49531,
+        "away_team_id": 25777,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514072,
+        "home_team": "Boavista",
+        "away_team": "Rio Ave",
+        "home_team_id": 2995,
+        "away_team_id": 3036,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514074,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "CD Nacional",
+        "home_team_id": 3035,
+        "away_team_id": 3013,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514069,
+        "home_team": "Santa Clara",
+        "away_team": "Vitória SC",
+        "home_team_id": 3011,
+        "away_team_id": 3009,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514071,
+        "home_team": "Sporting Braga",
+        "away_team": "Sporting",
+        "home_team_id": 2999,
+        "away_team_id": 3001,
+        "home_goals": 2,
+        "away_goals": 4,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514070,
+        "home_team": "Benfica",
+        "away_team": "FC Porto",
+        "home_team_id": 3006,
+        "away_team_id": 3002,
+        "home_goals": 4,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514086,
+        "home_team": "SC Farense",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 2998,
+        "away_team_id": 3035,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514087,
+        "home_team": "Rio Ave",
+        "away_team": "Moreirense",
+        "home_team_id": 3036,
+        "away_team_id": 3014,
+        "home_goals": 3,
+        "away_goals": 2,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514084,
+        "home_team": "CD Nacional",
+        "away_team": "Boavista",
+        "home_team_id": 3013,
+        "away_team_id": 2995,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514088,
+        "home_team": "Sporting",
+        "away_team": "Santa Clara",
+        "home_team_id": 3001,
+        "away_team_id": 3011,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514082,
+        "home_team": "Estoril Praia",
+        "away_team": "Famalicão",
+        "home_team_id": 4500,
+        "away_team_id": 49531,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514080,
+        "home_team": "FC Arouca",
+        "away_team": "Benfica",
+        "home_team_id": 25777,
+        "away_team_id": 3006,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514083,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "Sporting Braga",
+        "home_team_id": 483088,
+        "away_team_id": 2999,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514081,
+        "home_team": "Vitória SC",
+        "away_team": "Gil Vicente",
+        "home_team_id": 3009,
+        "away_team_id": 3010,
+        "home_goals": 4,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514085,
+        "home_team": "FC Porto",
+        "away_team": "Casa Pia",
+        "home_team_id": 3002,
+        "away_team_id": 36365,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514155,
+        "home_team": "Moreirense",
+        "away_team": "Sporting",
+        "home_team_id": 3014,
+        "away_team_id": 3001,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514093,
+        "home_team": "Sporting Braga",
+        "away_team": "Estoril Praia",
+        "home_team_id": 2999,
+        "away_team_id": 4500,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514154,
+        "home_team": "Gil Vicente",
+        "away_team": "CD Nacional",
+        "home_team_id": 3010,
+        "away_team_id": 3013,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514092,
+        "home_team": "Benfica",
+        "away_team": "Vitória SC",
+        "home_team_id": 3006,
+        "away_team_id": 3009,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514089,
+        "home_team": "Santa Clara",
+        "away_team": "Rio Ave",
+        "home_team_id": 3011,
+        "away_team_id": 3036,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514156,
+        "home_team": "Famalicão",
+        "away_team": "FC Porto",
+        "home_team_id": 49531,
+        "away_team_id": 3002,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514095,
+        "home_team": "Boavista",
+        "away_team": "SC Farense",
+        "home_team_id": 2995,
+        "away_team_id": 2998,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514158,
+        "home_team": "Casa Pia",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 36365,
+        "away_team_id": 483088,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514157,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "FC Arouca",
+        "home_team_id": 3035,
+        "away_team_id": 25777,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514161,
+        "home_team": "SC Farense",
+        "away_team": "Gil Vicente",
+        "home_team_id": 2998,
+        "away_team_id": 3010,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514167,
+        "home_team": "CD Nacional",
+        "away_team": "Moreirense",
+        "home_team_id": 3013,
+        "away_team_id": 3014,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514164,
+        "home_team": "Sporting",
+        "away_team": "Boavista",
+        "home_team_id": 3001,
+        "away_team_id": 2995,
+        "home_goals": 3,
+        "away_goals": 2,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514160,
+        "home_team": "FC Arouca",
+        "away_team": "Santa Clara",
+        "home_team_id": 25777,
+        "away_team_id": 3011,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514162,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "Benfica",
+        "home_team_id": 483088,
+        "away_team_id": 3006,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514165,
+        "home_team": "Estoril Praia",
+        "away_team": "Casa Pia",
+        "home_team_id": 4500,
+        "away_team_id": 36365,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514159,
+        "home_team": "Sporting Braga",
+        "away_team": "Famalicão",
+        "home_team_id": 2999,
+        "away_team_id": 49531,
+        "home_goals": 3,
+        "away_goals": 3,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514166,
+        "home_team": "FC Porto",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 3002,
+        "away_team_id": 3035,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514163,
+        "home_team": "Rio Ave",
+        "away_team": "Vitória SC",
+        "home_team_id": 3036,
+        "away_team_id": 3009,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514176,
+        "home_team": "Casa Pia",
+        "away_team": "FC Arouca",
+        "home_team_id": 36365,
+        "away_team_id": 25777,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514174,
+        "home_team": "Famalicão",
+        "away_team": "SC Farense",
+        "home_team_id": 49531,
+        "away_team_id": 2998,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514177,
+        "home_team": "Boavista",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 2995,
+        "away_team_id": 483088,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514173,
+        "home_team": "Moreirense",
+        "away_team": "FC Porto",
+        "home_team_id": 3014,
+        "away_team_id": 3002,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514168,
+        "home_team": "Santa Clara",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3011,
+        "away_team_id": 2999,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514171,
+        "home_team": "Gil Vicente",
+        "away_team": "Sporting",
+        "home_team_id": 3010,
+        "away_team_id": 3001,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514169,
+        "home_team": "Benfica",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3006,
+        "away_team_id": 4500,
+        "home_goals": 3,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514170,
+        "home_team": "Vitória SC",
+        "away_team": "CD Nacional",
+        "home_team_id": 3009,
+        "away_team_id": 3013,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514172,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Rio Ave",
+        "home_team_id": 3035,
+        "away_team_id": 3036,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514179,
+        "home_team": "FC Arouca",
+        "away_team": "Gil Vicente",
+        "home_team_id": 25777,
+        "away_team_id": 3010,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514182,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 483088,
+        "away_team_id": 3035,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514180,
+        "home_team": "Estoril Praia",
+        "away_team": "Moreirense",
+        "home_team_id": 4500,
+        "away_team_id": 3014,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514184,
+        "home_team": "FC Porto",
+        "away_team": "Boavista",
+        "home_team_id": 3002,
+        "away_team_id": 2995,
+        "home_goals": 4,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514185,
+        "home_team": "Rio Ave",
+        "away_team": "CD Nacional",
+        "home_team_id": 3036,
+        "away_team_id": 3013,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514181,
+        "home_team": "SC Farense",
+        "away_team": "Vitória SC",
+        "home_team_id": 2998,
+        "away_team_id": 3009,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514178,
+        "home_team": "Sporting Braga",
+        "away_team": "Casa Pia",
+        "home_team_id": 2999,
+        "away_team_id": 36365,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514183,
+        "home_team": "Sporting",
+        "away_team": "Benfica",
+        "home_team_id": 3001,
+        "away_team_id": 3006,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514186,
+        "home_team": "Famalicão",
+        "away_team": "Santa Clara",
+        "home_team_id": 49531,
+        "away_team_id": 3011,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514189,
+        "home_team": "Vitória SC",
+        "away_team": "Sporting",
+        "home_team_id": 3009,
+        "away_team_id": 3001,
+        "home_goals": 4,
+        "away_goals": 4,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514196,
+        "home_team": "Moreirense",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 3014,
+        "away_team_id": 483088,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514188,
+        "home_team": "Benfica",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3006,
+        "away_team_id": 2999,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514195,
+        "home_team": "Boavista",
+        "away_team": "FC Arouca",
+        "home_team_id": 2995,
+        "away_team_id": 25777,
+        "home_goals": 1,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514187,
+        "home_team": "Santa Clara",
+        "away_team": "SC Farense",
+        "home_team_id": 3011,
+        "away_team_id": 2998,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514190,
+        "home_team": "Casa Pia",
+        "away_team": "Famalicão",
+        "home_team_id": 36365,
+        "away_team_id": 49531,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514192,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3035,
+        "away_team_id": 4500,
+        "home_goals": 2,
+        "away_goals": 4,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514191,
+        "home_team": "Gil Vicente",
+        "away_team": "Rio Ave",
+        "home_team_id": 3010,
+        "away_team_id": 3036,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514193,
+        "home_team": "CD Nacional",
+        "away_team": "FC Porto",
+        "home_team_id": 3013,
+        "away_team_id": 3002,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514202,
+        "home_team": "Benfica",
+        "away_team": "Famalicão",
+        "home_team_id": 3006,
+        "away_team_id": 49531,
+        "home_goals": 4,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514197,
+        "home_team": "Santa Clara",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3011,
+        "away_team_id": 4500,
+        "home_goals": 2,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514205,
+        "home_team": "Rio Ave",
+        "away_team": "Sporting",
+        "home_team_id": 3036,
+        "away_team_id": 3001,
+        "home_goals": 0,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514199,
+        "home_team": "Vitória SC",
+        "away_team": "FC Arouca",
+        "home_team_id": 3009,
+        "away_team_id": 25777,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514201,
+        "home_team": "CD Nacional",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 3013,
+        "away_team_id": 483088,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514200,
+        "home_team": "Moreirense",
+        "away_team": "SC Farense",
+        "home_team_id": 3014,
+        "away_team_id": 2998,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514198,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3035,
+        "away_team_id": 2999,
+        "home_goals": 0,
+        "away_goals": 1,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514206,
+        "home_team": "Gil Vicente",
+        "away_team": "FC Porto",
+        "home_team_id": 3010,
+        "away_team_id": 3002,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514204,
+        "home_team": "Boavista",
+        "away_team": "Casa Pia",
+        "home_team_id": 2995,
+        "away_team_id": 36365,
+        "home_goals": 2,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514213,
+        "home_team": "FC Arouca",
+        "away_team": "Moreirense",
+        "home_team_id": 25777,
+        "away_team_id": 3014,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514210,
+        "home_team": "Famalicão",
+        "away_team": "CF Estrela Amadora",
+        "home_team_id": 49531,
+        "away_team_id": 3035,
+        "home_goals": 0,
+        "away_goals": 0,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514215,
+        "home_team": "SC Farense",
+        "away_team": "Rio Ave",
+        "home_team_id": 2998,
+        "away_team_id": 3036,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514208,
+        "home_team": "Casa Pia",
+        "away_team": "Benfica",
+        "home_team_id": 36365,
+        "away_team_id": 3006,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514211,
+        "home_team": "Sporting",
+        "away_team": "CD Nacional",
+        "home_team_id": 3001,
+        "away_team_id": 3013,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514214,
+        "home_team": "Estoril Praia",
+        "away_team": "Vitória SC",
+        "home_team_id": 4500,
+        "away_team_id": 3009,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514212,
+        "home_team": "FC Porto",
+        "away_team": "Santa Clara",
+        "home_team_id": 3002,
+        "away_team_id": 3011,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514209,
+        "home_team": "Sporting Braga",
+        "away_team": "Boavista",
+        "home_team_id": 2999,
+        "away_team_id": 2995,
+        "home_goals": 3,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514216,
+        "home_team": "AVS - Futebol SAD",
+        "away_team": "Gil Vicente",
+        "home_team_id": 483088,
+        "away_team_id": 3010,
+        "home_goals": 1,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514226,
+        "home_team": "Boavista",
+        "away_team": "Famalicão",
+        "home_team_id": 2995,
+        "away_team_id": 49531,
+        "home_goals": 0,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514222,
+        "home_team": "CD Nacional",
+        "away_team": "FC Arouca",
+        "home_team_id": 3013,
+        "away_team_id": 25777,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514217,
+        "home_team": "Santa Clara",
+        "away_team": "Casa Pia",
+        "home_team_id": 3011,
+        "away_team_id": 36365,
+        "home_goals": 2,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514223,
+        "home_team": "Gil Vicente",
+        "away_team": "Estoril Praia",
+        "home_team_id": 3010,
+        "away_team_id": 4500,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514225,
+        "home_team": "Vitória SC",
+        "away_team": "AVS - Futebol SAD",
+        "home_team_id": 3009,
+        "away_team_id": 483088,
+        "home_goals": 2,
+        "away_goals": 0,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514224,
+        "home_team": "Sporting",
+        "away_team": "SC Farense",
+        "home_team_id": 3001,
+        "away_team_id": 2998,
+        "home_goals": 3,
+        "away_goals": 1,
+        "winnerCode": 1
+    },
+    {
+        "match_id": 12514219,
+        "home_team": "CF Estrela Amadora",
+        "away_team": "Benfica",
+        "home_team_id": 3035,
+        "away_team_id": 3006,
+        "home_goals": 2,
+        "away_goals": 3,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514221,
+        "home_team": "Moreirense",
+        "away_team": "Sporting Braga",
+        "home_team_id": 3014,
+        "away_team_id": 2999,
+        "home_goals": 1,
+        "away_goals": 2,
+        "winnerCode": 2
+    },
+    {
+        "match_id": 12514220,
+        "home_team": "Rio Ave",
+        "away_team": "FC Porto",
+        "home_team_id": 3036,
+        "away_team_id": 3002,
+        "home_goals": 2,
+        "away_goals": 2,
+        "winnerCode": 3
+    },
+    {
+        "match_id": 12514229,
+        "home_team": "FC Porto",
+        "away_team": "Sporting",
+        "home_team_id": 3002,
+        "away_team_id": 3001,
+        "home_goals": 1,
+        "away_goals": 1,
+        "winnerCode": 3
+    }
+]
