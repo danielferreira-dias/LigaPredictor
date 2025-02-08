@@ -18,6 +18,10 @@ class Game:
         self.headToHead_home_wins = 0
         self.headToHead_away_wins = 0
         self.headToHead_draws = 0
+        self.home_team_home_position = 0
+        self.home_team_away_position = 0
+        self.away_team_home_position = 0
+        self.away_team_away_position = 0
         self.winnerCode = 0
         self.result = ""
 

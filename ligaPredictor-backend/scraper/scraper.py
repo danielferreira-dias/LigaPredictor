@@ -56,9 +56,7 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
                             game.away_team_id = event["awayTeam"]["id"]
                             game.winnerCode = event["winnerCode"]
 
-                            """
-                                getPreGameForm can only happen after the fifth round
-                            """
+                            ## Get Pre-game Form
                             if round_num >= 2:
                                 getPreGameform(event["id"], game, session)
                             else:
@@ -68,16 +66,17 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
                                 game.away_position = 0
                                 game.away_avgRating = 0.0
 
-                            """
-                                check if Club was promoted this season
-                            """
+                            ## Check if Team was Promoted
                             fetchPromotedClubs(season_id, session, game)
 
-                            """
-                                check last 10 matches head to head 
-                            """
+                            ## Check Last 10 Matches Between Teams
                             fetchLastHeadToHead(event["id"], session, game)
 
+                            # name, age, city, _ = get_user_info()
+                            game.home_team_home_position = fetchStandings(season_id, session, game.home_team_id, "home")
+                            game.home_team_away_position = fetchStandings(season_id, session, game.home_team_id, "away")
+                            game.away_team_home_position = fetchStandings(season_id, session, game.away_team_id, "home")
+                            game.away_team_away_position = fetchStandings(season_id, session, game.away_team_id, "away")
                             
                             game.setFinalResult()
                             gameJSON.append(game.to_dict())
@@ -173,6 +172,29 @@ def fetchLastHeadToHead(match_id: int, session: cureq.Session, game):
     except Exception as e:
         print(f"Unexpected Error: ", e)
 
+def fetchStandings(season: int, session: cureq.Session, club_id: int, type_standings: str):
+    url = f"https://www.sofascore.com/api/v1/tournament/52/season/{season}/standings/{type_standings}"
+
+    try:
+        response = session.get(url, headers=headers, impersonate="chrome")
+
+        if response.status_code  == 200:
+            fetched_Data = response.json()
+            
+            for position in fetched_Data['standings']:
+                for row in range(0, len(position['rows'])):
+                    if club_id == position['rows'][row]['team']['id']:
+                        return (position['rows'][row]['position'])
+        else:   
+            print(f"Failed to fetch data, status code: {response.status_code}")  
+
+    except requests.exceptions.HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err}")
+    except KeyError as key_err:
+        print(f"Missing expected key in response: {key_err}")
+    except Exception as e:
+        print(f"Unexpected Error: ", e)
+
 def upload_info_to_json(season: int, session: cureq.Session):
 
     data_dir = "./ligaPredictor-data/liga_portugal"
@@ -198,6 +220,7 @@ def upload_info_to_json(season: int, session: cureq.Session):
 def main():
     session = new_session()
     upload_info_to_json(63670, session)
+    
 
 
 main()
