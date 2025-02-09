@@ -9,8 +9,8 @@ class Game:
         self.away_team_state = ""
         self.home_goals = 0
         self.away_goals = 0
-        self.home_position = 0
-        self.away_position = 0
+        self.home_team_currentClassification = 0
+        self.away_team_currentClassification = 0
         self.home_avgRating = 0.0
         self.away_avgRating = 0.0
         self.wins_in_last_5_matches_home = 0
@@ -18,10 +18,12 @@ class Game:
         self.headToHead_home_wins = 0
         self.headToHead_away_wins = 0
         self.headToHead_draws = 0
-        self.home_team_home_position = 0
-        self.home_team_away_position = 0
-        self.away_team_home_position = 0
-        self.away_team_away_position = 0
+        self.home_team_homeClassification = 0
+        self.home_team_awayClassification = 0
+        self.away_team_homeClassification = 0
+        self.away_team_awayClassification = 0
+        self.home_team_CL_match = ""
+        self.away_team_CL_match = ""
         self.winnerCode = 0
         self.result = ""
 

@@ -1,5 +1,6 @@
 import json
 import os
+import random
 import time
 import numpy
 import requests
@@ -35,6 +36,7 @@ def fetchSeasonCurrentRound(season_id):
 
 def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
     gameJSON = []
+    standings = {}
 
     for round_num  in range(1, fetchSeasonCurrentRound(season_id)):
         url = f"https://www.sofascore.com/api/v1/unique-tournament/238/season/{season_id}/events/round/{round_num}"
@@ -56,7 +58,7 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
                             game.away_team_id = event["awayTeam"]["id"]
                             game.winnerCode = event["winnerCode"]
 
-                            ## Get Pre-game Form
+                            # Get Pre-game Form
                             if round_num >= 2:
                                 getPreGameform(event["id"], game, session)
                             else:
@@ -70,15 +72,21 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
                             fetchPromotedClubs(season_id, session, game)
 
                             ## Check Last 10 Matches Between Teams
-                            fetchLastHeadToHead(event["id"], session, game)
+                            game.headToHead_home_wins, game.headToHead_away_wins, game.headToHead_draws  = fetchLastHeadToHead(event["id"], session, game)
 
-                            # name, age, city, _ = get_user_info()
-                            game.home_team_home_position = fetchStandings(season_id, session, game.home_team_id, "home")
-                            game.home_team_away_position = fetchStandings(season_id, session, game.home_team_id, "away")
-                            game.away_team_home_position = fetchStandings(season_id, session, game.away_team_id, "home")
-                            game.away_team_away_position = fetchStandings(season_id, session, game.away_team_id, "away")
-                            
+                            # Simulate result (replace with real match result logic)
+                            sorted_standings_home = sort_standings(standings, "home_points")
+                            sorted_standings_away = sort_standings(standings, "away_points")
+
+                            game.home_team_homeClassification = find_team_rank(sorted_standings_home, game.home_team_id)
+                            game.away_team_homeClassification = find_team_rank(sorted_standings_home, game.away_team_id)
+                            game.home_team_awayClassification = find_team_rank(sorted_standings_away, game.home_team_id)
+                            game.away_team_awayClassification = find_team_rank(sorted_standings_away, game.away_team_id)
+
+                            update_standings(standings, game.home_team_id, game.away_team_id, game.home_goals , game.away_goals )
+
                             game.setFinalResult()
+                            
                             gameJSON.append(game.to_dict())
                         except KeyError as key_err:
                             print(f"Missing key in event data: {key_err}")
@@ -94,6 +102,57 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
 
     return gameJSON
 
+def sort_standings(standings, type_Standings: str):
+    # Convert standings dictionary to a list of tuples (team_id, team_data)
+    standings_list = [
+        (team_id, data) for team_id, data in standings.items()
+    ]
+
+    # Sort by points (descending), then goal difference (descending), then goals scored (descending)
+    standings_list.sort(
+        key=lambda x: (
+            x[1][type_Standings],
+            x[1]["goals_scored"] - x[1]["goals_conceded"],  # Goal difference
+            x[1]["goals_scored"]
+        ),
+        reverse=True  # Sort in descending order
+    )
+
+    return standings_list
+
+def update_standings(standings, home_team_id: int, away_team_id: int, home_goals: int, away_goals: int):
+
+    if home_team_id not in standings:
+        standings[home_team_id] = {"home_points": 0, "away_points": 0, "wins": 0, "draws": 0, "losses": 0, "goals_scored": 0, "goals_conceded": 0}
+    if away_team_id not in standings:
+        standings[away_team_id] = {"home_points": 0, "away_points": 0, "wins": 0, "draws": 0, "losses": 0, "goals_scored": 0, "goals_conceded": 0}
+
+    standings[home_team_id]["goals_scored"] += home_goals
+    standings[home_team_id]["goals_conceded"] += away_goals
+    standings[away_team_id]["goals_scored"] += away_goals
+    standings[away_team_id]["goals_conceded"] += home_goals
+
+    if home_goals > away_goals:
+        standings[home_team_id]["wins"] += 1
+        standings[away_team_id]["losses"] += 1
+        standings[home_team_id]["home_points"] += 3
+    elif home_goals < away_goals:
+        standings[away_team_id]["wins"] += 1
+        standings[home_team_id]["losses"] += 1
+        standings[away_team_id]["away_points"] += 3
+    else:
+        standings[home_team_id]["home_points"] += 1
+        standings[away_team_id]["away_points"] += 1
+        standings[home_team_id]["draws"] += 1
+        standings[away_team_id]["draws"] += 1
+
+def find_team_rank(sorted_standings, team_id):
+    for rank, (tid, _) in enumerate(sorted_standings, start=1):
+        if tid == team_id:
+            return rank
+    return 0
+
+
 def getPreGameform(match_id: int, game, session: cureq.Session ):
     url = f"https://www.sofascore.com/api/v1/event/{match_id}/pregame-form"
 
@@ -103,11 +162,11 @@ def getPreGameform(match_id: int, game, session: cureq.Session ):
         if response.status_code  == 200:
             fetched_Data = response.json()
 
-            game.home_position = fetched_Data['homeTeam']['position']
-            game.home_avgRating = fetched_Data['homeTeam']['avgRating']
+            game.home_team_currentClassification = fetched_Data['homeTeam']['position']
+            game.home_avgRating = float(fetched_Data['homeTeam']['avgRating'])
             
-            game.away_position = fetched_Data['awayTeam']['position']
-            game.away_avgRating = fetched_Data['awayTeam']['avgRating']
+            game.away_team_currentClassification = fetched_Data['awayTeam']['position']
+            game.away_avgRating = float(fetched_Data['awayTeam']['avgRating'])
 
             for wins in fetched_Data['homeTeam']['form']:
                 if wins == "W":
@@ -159,32 +218,7 @@ def fetchLastHeadToHead(match_id: int, session: cureq.Session, game):
 
         if response.status_code  == 200:
             fetched_Data = response.json()
-            game.headToHead_home_wins = fetched_Data['teamDuel']['homeWins']
-            game.headToHead_away_wins = fetched_Data['teamDuel']['awayWins']
-            game.headToHead_draws = fetched_Data['teamDuel']['draws']
-        else:   
-            print(f"Failed to fetch data, status code: {response.status_code}")  
-
-    except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
-    except KeyError as key_err:
-        print(f"Missing expected key in response: {key_err}")
-    except Exception as e:
-        print(f"Unexpected Error: ", e)
-
-def fetchStandings(season: int, session: cureq.Session, club_id: int, type_standings: str):
-    url = f"https://www.sofascore.com/api/v1/tournament/52/season/{season}/standings/{type_standings}"
-
-    try:
-        response = session.get(url, headers=headers, impersonate="chrome")
-
-        if response.status_code  == 200:
-            fetched_Data = response.json()
-            
-            for position in fetched_Data['standings']:
-                for row in range(0, len(position['rows'])):
-                    if club_id == position['rows'][row]['team']['id']:
-                        return (position['rows'][row]['position'])
+            return fetched_Data['teamDuel']['homeWins'], fetched_Data['teamDuel']['awayWins'], fetched_Data['teamDuel']['draws']
         else:   
             print(f"Failed to fetch data, status code: {response.status_code}")  
 
@@ -220,6 +254,7 @@ def upload_info_to_json(season: int, session: cureq.Session):
 def main():
     session = new_session()
     upload_info_to_json(63670, session)
+    # fetchSeasonRoundsPlayed(63670, session)
     
 
 
