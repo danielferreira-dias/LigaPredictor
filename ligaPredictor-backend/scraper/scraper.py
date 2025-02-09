@@ -1,10 +1,9 @@
 import json
 import os
-import random
 import time
 import numpy
 import requests
-from models import Game
+from models import Game, seasons
 from curl_cffi import requests as cureq
 
 headers = {
@@ -78,12 +77,16 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
                             sorted_standings_home = sort_standings(standings, "home_points")
                             sorted_standings_away = sort_standings(standings, "away_points")
 
-                            game.home_team_homeClassification = find_team_rank(sorted_standings_home, game.home_team_id)
-                            game.away_team_homeClassification = find_team_rank(sorted_standings_home, game.away_team_id)
-                            game.home_team_awayClassification = find_team_rank(sorted_standings_away, game.home_team_id)
-                            game.away_team_awayClassification = find_team_rank(sorted_standings_away, game.away_team_id)
+                            game.home_team_homeClassification= find_team_rank(sorted_standings_home, game.home_team_id)
+                            game.away_team_homeClassification= find_team_rank(sorted_standings_home, game.away_team_id)
+                            game.home_team_awayClassification= find_team_rank(sorted_standings_away, game.home_team_id)
+                            game.away_team_awayClassification= find_team_rank(sorted_standings_away, game.away_team_id)
 
-                            update_standings(standings, game.home_team_id, game.away_team_id, game.home_goals , game.away_goals )
+                            game.match_Referee = fetchGameReferee(event["id"], session)
+
+                            game.bestAvg_homePlayer, game.bestAvg_homePlayer_Rating, game.bestAvg_awayPlayer, game.bestAvg_awayPlayer_Rating  = fetchBestPlayers(event["id"], session)
+
+                            update_standings(standings, game.home_team_id, game.away_team_id, game.home_goals , game.away_goals, game )
 
                             game.setFinalResult()
                             
@@ -92,13 +95,13 @@ def fetchSeasonRoundsPlayed(season_id: int, session: cureq.Session):
                             print(f"Missing key in event data: {key_err}")
                             continue  # Skip this event
             else:
-                print(f"Failed to fetch data, status code: {response.status_code}")
+                print(f"Failed to fetch data, status code: {response.status_code} - FetchSeasons - {season_id}")
         except requests.exceptions.HTTPError as http_err:
-            print(f"HTTP error occurred: {http_err}")
+            print(f"HTTP error occurred: {http_err} - FetchSeasons - {season_id}")
         except KeyError as key_err:
-            print(f"Missing expected key in response: {key_err}")
+            print(f"Missing expected key in response: {key_err} - FetchSeasons - {season_id}")
         except Exception as e:
-            print(f"Unexpected Error: ", e)
+            print(f"Unexpected Error: - FetchSeasons - {season_id} ", e)
 
     return gameJSON
 
@@ -120,17 +123,28 @@ def sort_standings(standings, type_Standings: str):
 
     return standings_list
 
-def update_standings(standings, home_team_id: int, away_team_id: int, home_goals: int, away_goals: int):
-
+def update_standings(standings, home_team_id: int, away_team_id: int, home_goals: int, away_goals: int, game):
     if home_team_id not in standings:
-        standings[home_team_id] = {"home_points": 0, "away_points": 0, "wins": 0, "draws": 0, "losses": 0, "goals_scored": 0, "goals_conceded": 0}
+        standings[home_team_id] = {"home_points": 0, "away_points": 0, "wins": 0, "draws": 0, "losses": 0, "goals_scored": 0, "goals_conceded": 0, "games_played": 0, "avg_goals_scored": 0, "avg_goals_conceded": 0}
     if away_team_id not in standings:
-        standings[away_team_id] = {"home_points": 0, "away_points": 0, "wins": 0, "draws": 0, "losses": 0, "goals_scored": 0, "goals_conceded": 0}
+        standings[away_team_id] = {"home_points": 0, "away_points": 0, "wins": 0, "draws": 0, "losses": 0, "goals_scored": 0, "goals_conceded": 0, "games_played": 0, "avg_goals_scored": 0, "avg_goals_conceded": 0}
+
+    if standings[home_team_id]["games_played"] > 0:
+        game.home_team_avgGoalsScored = standings[home_team_id]["goals_scored"] / standings[home_team_id]["games_played"]
+        game.home_team_avgGoalsConceded = standings[home_team_id]["goals_conceded"] / standings[home_team_id]["games_played"]
+
+    if standings[away_team_id]["games_played"] > 0:
+        game.away_team_avgGoalsScored = standings[away_team_id]["goals_scored"] / standings[away_team_id]["games_played"]
+        game.away_team_avgGoalsConceded  = standings[away_team_id]["goals_conceded"] / standings[away_team_id]["games_played"]
 
     standings[home_team_id]["goals_scored"] += home_goals
     standings[home_team_id]["goals_conceded"] += away_goals
     standings[away_team_id]["goals_scored"] += away_goals
     standings[away_team_id]["goals_conceded"] += home_goals
+
+    # Update game counts
+    standings[home_team_id]["games_played"] += 1
+    standings[away_team_id]["games_played"] += 1
 
     if home_goals > away_goals:
         standings[home_team_id]["wins"] += 1
@@ -151,7 +165,6 @@ def find_team_rank(sorted_standings, team_id):
         if tid == team_id:
             return rank
     return 0
-
 
 def getPreGameform(match_id: int, game, session: cureq.Session ):
     url = f"https://www.sofascore.com/api/v1/event/{match_id}/pregame-form"
@@ -177,7 +190,7 @@ def getPreGameform(match_id: int, game, session: cureq.Session ):
                     game.wins_in_last_5_matches_away += 1
 
         else:
-            print(f"Failed to fetch data, status code: {response.status_code}")  
+            print(f"Failed to fetch data, status code: {response.status_code} - Pre game form - {match_id}")  
 
     except requests.exceptions.HTTPError as http_err:
         print(f"HTTP error occurred: {http_err}")
@@ -194,40 +207,55 @@ def fetchPromotedClubs(season_id: int, session: cureq.Session, game):
             fetched_Data = response.json()
             for club in fetched_Data['info']['newcomersLowerDivision']:
                 if game.home_team_id == club['id']:
-                    game.home_team_state = "Promoted"
+                    game.home_team_state = 1
                 elif game.away_team_id == club['id']:
-                    game.away_team_state = "Promoted"
+                    game.away_team_state = 1
                 else:
-                    game.home_team_state = "Stable"
-                    game.away_team_state = "Stable"
+                    game.home_team_state = 0
+                    game.away_team_state = 0
         else:
-            print(f"Failed to fetch data, status code: {response.status_code}")  
+            print(f"Failed to fetch data, status code: {response.status_code} - Promoted Clubs - {season_id}")  
 
     except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
+        print(f"HTTP error occurred: {http_err} - fetchPromotedClubs - {season_id}")
     except KeyError as key_err:
-        print(f"Missing expected key in response: {key_err}")
+        print(f"Missing expected key in response: {key_err} - fetchPromotedClubs - {season_id}")
     except Exception as e:
-        print(f"Unexpected Error: ", e)
+        print(f"Unexpected Error: - fetchPromotedClubs - {season_id}", e)
 
 def fetchLastHeadToHead(match_id: int, session: cureq.Session, game):
     url = f"https://www.sofascore.com/api/v1/event/{match_id}/h2h"
 
     try:
         response = session.get(url, headers=headers, impersonate="chrome")
-
         if response.status_code  == 200:
             fetched_Data = response.json()
             return fetched_Data['teamDuel']['homeWins'], fetched_Data['teamDuel']['awayWins'], fetched_Data['teamDuel']['draws']
         else:   
-            print(f"Failed to fetch data, status code: {response.status_code}")  
+            print(f"Failed to fetch data, status code: {response.status_code} - Head to Head - {match_id}")  
 
     except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
+        print(f"HTTP error occurred: {http_err} - Head to Head - {match_id}" )
     except KeyError as key_err:
-        print(f"Missing expected key in response: {key_err}")
+        print(f"Missing expected key in response: {key_err} - Head to Head - {match_id} ")
     except Exception as e:
-        print(f"Unexpected Error: ", e)
+        print(f"Unexpected Error: - Head to Head - {match_id} ", e)
+
+def fetchGameReferee(match_id: int, session: cureq.Session):
+    url = f"https://www.sofascore.com/api/v1/event/{match_id}/"
+
+    try:
+        response = session.get(url, headers=headers, impersonate="chrome")
+        response.raise_for_status() 
+        fetched_data = response.json()
+
+        return fetched_data['event']['referee']['name']
+    except requests.exceptions.RequestException as err:
+        print(f"Error occurred while fetching data: {err} - {match_id}")
+    except KeyError as key_err:
+        print(f"Missing expected key in response: {key_err} - {match_id}")
+
+    return "Referee not assigned"
 
 def upload_info_to_json(season: int, session: cureq.Session):
 
@@ -240,7 +268,6 @@ def upload_info_to_json(season: int, session: cureq.Session):
     file_path = os.path.join(data_dir, f"game_data_{season}.json")
     
     try:
-
         # Fetch season data and write it to the JSON file
         with open(file_path, "w", encoding="utf-8") as f:
             season_data = fetchSeasonRoundsPlayed(season, session) 
@@ -249,13 +276,31 @@ def upload_info_to_json(season: int, session: cureq.Session):
         print(f"Data for season {season} has been saved successfully at {file_path}.")
     
     except Exception as e:
-        print(f"An error occurred while uploading data: {e}")
+        print(f"An error occurred while uploading data: {e} - JSON Upload")
+
+def fetchBestPlayers(match_id: int, session: cureq.Session):
+    url = f"https://www.sofascore.com/api/v1/event/{match_id}/best-players/summary"
+
+    try:
+        response = session.get(url, headers=headers, impersonate="chrome")
+        if response.status_code == 200:
+            fetched_Data = response.json()
+            return fetched_Data['bestHomeTeamPlayers'][0]['player']['name'], float(fetched_Data['bestHomeTeamPlayers'][0]['value']), fetched_Data['bestAwayTeamPlayers'][0]['player']['name'], float(fetched_Data['bestAwayTeamPlayers'][0]['value'])
+        else:
+            print(f"Failed to fetch data, status code: {response.status_code} - {match_id} in fetchBestPlayers")
+
+    except requests.exceptions.HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err} - {match_id} in fetchBestPlayers")
+    except KeyError as key_err:
+        print(f"Missing expected key in response: {key_err} - {match_id} in fetchBestPlayers")
+    except Exception as e:
+        print(f"Unexpected Error: - {match_id} in fetchBestPlayers ", e )
 
 def main():
     session = new_session()
     upload_info_to_json(63670, session)
-    # fetchSeasonRoundsPlayed(63670, session)
-    
+    time.sleep(10)
+    upload_info_to_json(52769, session)
 
 
 main()
